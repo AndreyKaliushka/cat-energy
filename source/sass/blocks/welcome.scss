@@ -1,0 +1,164 @@
+.welcome {
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  background-image: url("/img/index-background-cat.jpg");
+  background-size: 320px 300px;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/index-background-mobile2x.jpg");
+  }
+
+  @media (min-width: 768px) {
+    background-image: none;
+    color: rgba(0, 0, 0, 1);
+    min-height: 850px;
+  }
+
+  @media (min-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 694px;
+    padding-bottom: 62px;
+  }
+}
+
+.welcome__green-backround {
+  @media (min-width: 1199px) {
+    background-color: rgba(104, 183, 56, 0.85);
+    position: absolute;
+    background-size: 600px 694px;
+    width: 600px;
+    min-height: 694px;
+    right: 0;
+  }
+}
+
+.welcome::after {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 270px;
+  background-image: url("/img/index-can-mobile.png");
+  background-repeat: no-repeat;
+  background-size: 280px 270px;
+  top: 167px;
+  left: 20px;
+
+  @media (min-width: 768px) {
+    background-image: url("/img/index-can.png");
+    width: 709px;
+    height: 609px;
+    background-size: 709px 609px;
+    top: 250px;
+    left: 54px;
+  }
+
+  @media (min-width: 1199px) {
+    background-size: 552px 499px;
+    left: 433px;
+    top: 141px;
+  }
+}
+
+.welcome__text-wrapper {
+  background-color: rgba(104, 183, 56, 0.85);
+  padding: 27px 35px;
+
+  @media (min-width: 768px) {
+    background-color: #ffffff;
+    padding-top: 42px;
+  }
+
+  @media (min-width: 1199px) {
+    width: 600px;
+    margin: 0;
+    padding: 0;
+    padding-top: 223px;
+  }
+}
+
+.welcome__title {
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 25px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    margin-left: 83px;
+    margin-bottom: 41px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    width: 416px;
+    text-align: left;
+  }
+}
+
+.welcome__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 135px;
+
+  @media (min-width: 768px) {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+    text-align: left;
+    margin-left: 83px;
+  }
+}
+
+.welcome__button-wrapper {
+  background-color: #ffffff;
+  min-height: 180px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 134px;
+    left: 118px;
+  }
+
+  @media (min-width: 1199px) {
+    width: 600px;
+    position: initial;
+    background-image: url("/img/index-background-desktop.jpg");
+    background-size: 600px 694px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/index-background-desktop2x.jpg");
+    }
+  }
+}
+
+.welcome__button-link {
+  position: absolute;
+  bottom: 0;
+  width: 190px;
+
+  @media (min-width: 768px) {
+    z-index: 2;
+  }
+
+  @media (min-width: 1199px) {
+    position: absolute;
+    top: 450px;
+    left: 83px;
+    height: 26px;
+    width: 190px;
+  }
+}

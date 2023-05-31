@@ -1,0 +1,38 @@
+.social {
+  margin: 0 auto;
+  width: 132px;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social__item {
+  margin: 0;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.social__item:last-child {
+  margin: 0;
+}
+
+.social-link {
+  display: block;
+  width: 27px;
+  height: 20px;
+  fill: rgba(102, 102, 102, 1);
+
+  &:hover {
+    fill: rgba(102, 102, 102, 0.6);
+  }
+
+  &:active {
+    fill: rgba(102, 102, 102, 0.3);
+  }
+}
+

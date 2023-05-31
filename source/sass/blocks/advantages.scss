@@ -1,0 +1,249 @@
+.advantages {
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 27px;
+  position: relative;
+
+  @media (min-width: 768px) {
+    padding-top: 23px;
+    padding-bottom: 104px;
+    padding-right: 109px;
+    padding-left: 31px;
+    border-bottom: solid rgba(230, 230, 230, 1) 1px;
+  }
+
+  @media (min-width: 1199px) {
+    border: none;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 262px;
+  }
+}
+
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.advantages__title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 42px;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 183px;
+  }
+}
+
+.advantages__item-wrapper {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    width: 628px;
+  }
+
+  @media (min-width: 1199px) {
+    width: 528px;
+  }
+}
+
+.advantages__item-wrapper:not(:last-child) {
+  @media (min-width: 768px) {
+    margin-bottom: 245px;
+  }
+
+  @media (min-width: 1199px) {
+    margin: 0;
+  }
+}
+
+
+.advantages__item {
+  position: relative;
+  padding: 0;
+  margin-bottom: 26px;
+}
+
+
+.advantages__item::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: rgba(104, 183, 56, 1);
+  position: absolute;
+
+  @media (min-width: 768px) {
+    width: 80px;
+    height: 80px;
+    bottom: 98px;
+  }
+}
+
+.advantages__item--leaf::after {
+  content: "";
+  width: 26px;
+  height: 31px;
+  background-image: url("/img/leaf.svg");
+  background-repeat: no-repeat;
+  background-size: 25px 28px;
+  position: absolute;
+  left: 18px;
+  top: 14px;
+
+  @media (min-width: 768px) {
+    left: 28px;
+    top: -83px;
+  }
+}
+
+.advantages__item--cup::after {
+  content: "";
+  width: 26px;
+  height: 31px;
+  background-image: url("/img/cup.svg");
+  background-repeat: no-repeat;
+  background-size: 25px 29px;
+  position: absolute;
+  left: 18px;
+  top: 14px;
+
+  @media (min-width: 768px) {
+    left: 28px;
+    top: -83px;
+  }
+}
+
+.advantages__item--covers::after {
+  content: "";
+  width: 26px;
+  height: 31px;
+  background-image: url("/img/covers.svg");
+  background-repeat: no-repeat;
+  background-size: 25px 30px;
+  position: absolute;
+  left: 18px;
+  top: 14px;
+
+  @media (min-width: 768px) {
+    left: 28px;
+    top: -83px;
+  }
+}
+
+.advantages__item--clock::after {
+  content: "";
+  width: 26px;
+  height: 31px;
+  background-image: url("/img/clock.svg");
+  background-repeat: no-repeat;
+  background-size: 26px 31px;
+  position: absolute;
+  left: 18px;
+  top: 14px;
+
+  @media (min-width: 768px) {
+    left: 28px;
+    top: -83px;
+  }
+}
+
+.advantages__item--clock br {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.advantages__description {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+  margin: 0;
+  padding: 0;
+  max-width: 200px;
+  margin-left: 80px;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 245px;
+    z-index: 2;
+    position: relative;
+  }
+}
+
+.advantages__description-first::after {
+  @media (min-width: 768px) {
+    content: "";
+    width: 112px;
+    height: 280px;
+    background-image: url("/img/first.svg");
+    background-repeat: no-repeat;
+    background-size: 112px 280px;
+    position: absolute;
+    z-index: 1;
+    left: 96px;
+    top: -107px;
+  }
+}
+
+.advantages__description-second::after {
+  @media (min-width: 768px) {
+    content: "";
+    width: 134px;
+    height: 280px;
+    background-image: url("/img/second.svg");
+    background-repeat: no-repeat;
+    background-size: 134px 280px;
+    position: absolute;
+    z-index: 1;
+    left: 96px;
+    top: -107px;
+  }
+}
+
+.advantages__description-third::after {
+  @media (min-width: 768px) {
+    content: "";
+    width: 136px;
+    height: 280px;
+    background-image: url("/img/third.svg");
+    background-repeat: no-repeat;
+    background-size: 136px 280px;
+    position: absolute;
+    z-index: 1;
+    left: 130px;
+    top: -107px;
+  }
+}
+
+.advantages__description-fourth::after {
+  @media (min-width: 768px) {
+    content: "";
+    width: 136px;
+    height: 280px;
+    background-image: url("/img/fourth.svg");
+    background-repeat: no-repeat;
+    background-size: 136px 280px;
+    position: absolute;
+    z-index: 1;
+    left: 130px;
+    top: -107px;
+  }
+}

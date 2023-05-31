@@ -1,0 +1,88 @@
+.adress {
+  display: flex;
+  flex-direction: column;
+}
+
+.adress__wrapper {
+  padding: 26px 20px;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: 768px) {
+    padding: 60px 70px 56px 70px;
+  }
+
+  @media (min-width: 1199px) {
+    padding: 59px 60px 56px 80px;
+    max-width: 425px;
+    position: absolute;
+    background-color: #ffffff;
+    top: 95px;
+    left: 55px;
+  }
+}
+
+.adress_title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  padding: 0;
+  margin: 0;
+  width: 139px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 172px;
+  }
+}
+
+.adress__text {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #444444;
+  padding: 0;
+  margin: 0;
+  width: 139px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    text-align: end;
+  }
+}
+
+.adress__text br {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.adress__map {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.adress__map iframe {
+  width: 320px;
+  height: 362px;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: 1199px) {
+    width: 100%;
+  }
+}

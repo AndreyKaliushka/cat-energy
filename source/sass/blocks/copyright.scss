@@ -1,0 +1,36 @@
+.copyright {
+  margin: 0;
+  padding: 0;
+}
+
+.copyright__link {
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  color: #444444;
+
+  &:hover {
+    color: rgba(68, 68, 68, 0.6);
+    fill: rgba(102, 102, 102, 0.6);
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+    fill: rgba(102, 102, 102, 0.3);
+  }
+}
+
+.copyright__link-title {
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    margin-right: 26px;
+  }
+}
