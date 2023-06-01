@@ -271,12 +271,12 @@
 .example__fat-cat {
   width: 50%;
   height: 256px;
-  background-image: url("/img/fat-cat-mobile.png");
+  background-image: url("img/fat-cat-mobile.png");
   background-repeat: no-repeat;
   background-size: cover;
 
   @media (min-width: 768px) {
-    background-image: url("/img/fat-cat-tablet.png");
+    background-image: url("img/fat-cat-tablet.png");
     width: 296px;
     height: 512px;
   }
@@ -285,13 +285,13 @@
 .example__slim-cat {
   width: 50%;
   height: 256px;
-  background-image: url("/img/slim-cat-mobile.png");
+  background-image: url("img/slim-cat-mobile.png");
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
 
   @media (min-width: 768px) {
-    background-image: url("/img/slim-cat-tablet.png");
+    background-image: url("img/slim-cat-tablet.png");
     width: 280px;
     height: 512px;
   }
@@ -360,7 +360,7 @@
 
 .example__slider-picture::after {
   content: "";
-  background-image: url("/img/slider.svg");
+  background-image: url("img/slider.svg");
   background-repeat: no-repeat;
   width: 24px;
   height: 18px;
